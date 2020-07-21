@@ -1,0 +1,50 @@
+<header>
+    <title>Contact Us Page</title>
+    <script src="../scripts/contact.js"></script>
+    <link rel="stylesheet" href="../styles/navigation.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+
+
+</header>
+
+<body>
+
+    <div class="navigation-bar">
+
+        <ul>
+            <li><a href="main.html" class="list-item">Home</a></li>
+            <li><a href="new-cars.html">New Cars for Sale</a></li>
+            <li><a href="used-cars.html">Used Cars for Sale</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+          </ul>
+
+    </div>
+
+    <h1 style="text-align: center;">
+        Contact Us
+    </h1>
+    <div class="container">
+        <form onsubmit="contactForm()">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+      
+          <label for="issue">Issue</label>
+          <select id="issue" name="issue">
+            <option value="refund">Refund</option>
+            <option value="repair">Repair</option>
+            <option value="general">General Issue</option>
+          </select>
+      
+          <label for="subject" >Subject</label>
+          <textarea required id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+</body>
